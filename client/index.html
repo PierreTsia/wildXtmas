@@ -14,29 +14,6 @@
   <app-root>Loading...</app-root>
   <script src="https://desandro.github.io/3dtransforms/js/utils.js"></script>
   <script>
-<<<<<<< HEAD
-    let init = () => {
-      console.log("salope");
-      let carousel = document.getElementById('carousel'),
-        navButtons = document.querySelectorAll('button'),
-        panelCount = 20,
-        transformProp = Modernizr.prefixed('transform'),
-        theta = 0;
-
-      onNavButtonClick = (event) => {
-        let increment = parseInt(event.target.getAttribute('data-increment'));
-        theta += (360 / panelCount) * increment * -1;
-        carousel.style[transformProp] = 'translateZ( -663px ) rotateY(' + theta + 'deg)';
-      };
-
-      for (var i = 0; i < 2; i++) {
-        navButtons[i].addEventListener('click', onNavButtonClick, false);
-      }
-    };
-
-    window.addEventListener('DOMContentLoaded', init, false);
-=======
->>>>>>> Jeremy
   </script>
 </body>
 
