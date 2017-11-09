@@ -1,6 +1,6 @@
 <div class="container">
 
-  <nav class="navbar navbar-dark bg-primary">
+  <!--nav class="navbar navbar-dark bg-primary">
     <div class="nav navbar-nav">
       <a routerLink="/" class="nav-item nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         <i class="fa fa-home"></i> Home
@@ -20,23 +20,29 @@
       <a routerLink="/admin" class="nav-item nav-link" routerLinkActive="active" *ngIf="auth.loggedIn && auth.isAdmin">
         <i class="fa fa-lock"></i> Admin
       </a>
-      <button class="btn btn-danger" type=""><a routerLink="/" class="nav-item nav-link" routerLinkActive="active">
-        Kid
-     </a></button>
-      <button class="btn btn-danger" type=""><a routerLink="/elfe" class="nav-item nav-link" routerLinkActive="active">
-         Elfe
-      </a></button>
-      <button class="btn btn-danger" type=""><a routerLink="/santa" class="nav-item nav-link" routerLinkActive="active">
-        Santa
-     </a></button>
+
       <a routerLink="/logout" class="nav-item nav-link" routerLinkActive="active" *ngIf="auth.loggedIn">
         <i class="fa fa-sign-out"></i> Logout
       </a>
-      
-    </div>
-  </nav>
 
-  
+    </div>
+  </nav-->
+
+  <button class="btn btn-danger" type="">
+    <a routerLink="/" class="nav-item nav-link" routerLinkActive="active">
+      Kid
+    </a>
+  </button>
+  <button class="btn btn-danger" type="">
+    <a routerLink="/elfe" class="nav-item nav-link" routerLinkActive="active">
+      Elfe
+    </a>
+  </button>
+  <button class="btn btn-danger" type="">
+    <a routerLink="/santa" class="nav-item nav-link" routerLinkActive="active">
+      Santa
+    </a>
+  </button>
 
   <router-outlet></router-outlet>
 

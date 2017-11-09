@@ -2,23 +2,124 @@ import { Toy } from './toy';
 export const TOYS = [
     {
         name: "Train",
-        imgToyUrl: "https://www.orangetreetoys.com/media/catalog/product/cache/1/image/685x/9df78eab33525d08d6e5fb8d27136e95/t/r/train_pull_along.jpg",
-        imgTechUrl: "http://blog.wsd.net/thpaskett/files/2011/08/Toy-Train.jpg",
-        picked : false
+        imgToyUrl: "../../assets/img/toy/train.jpg",
+        imgTechUrl: "../../assets/img/tech/train-tech.png",
+        picked: false
     },
     {
-        name : "Ballon",
-        imgToyUrl: "https://i.pinimg.com/originals/f7/53/31/f75331c607c5c7abc19386b05ae6f970.png",
-        imgTechUrl:"https://images.fineartamerica.com/images-medium-large-5/soccer-ball-construction-artwork-gray-nikki-marie-smith.jpg",
-        picked : false
+        name: "Ballon",
+        imgToyUrl: "../../assets/img/toy/ballon.jpg",
+        imgTechUrl: "../../assets/img/tech/ballon-tech.png",
+        picked: false
     },
     {
-        name : "Nerf",
-        imgToyUrl: "http://www.hasbro.com/common/productimages/fr_FR/7867d22450569047f513e81f6f608da4/74d8383cb6b3fe0bb8aa1fab15327737a642478f.jpg",
-        imgTechUrl:"http://www.captainslug.com/nerf/abp5k_97.jpg",
-        picked : false
+        name: "Nerf",
+        imgToyUrl: "../../assets/img/toy/nerf.jpg",
+        imgTechUrl: "../../assets/img/tech/nerf-tech.png",
+        picked: false
     },
-
+    {
+        name: "Vélo",
+        imgToyUrl: "../../assets/img/toy/bike.jpg",
+        imgTechUrl: "../../assets/img/tech/bike-tech.png",
+        picked: false
+    },
+    {
+        name: "Bateau",
+        imgToyUrl: "../../assets/img/toy/boat.jpg",
+        imgTechUrl: "../../assets/img/tech/boat-tech.png",
+        picked: false
+    },
+    {
+        name: "Circuit",
+        imgToyUrl: "../../assets/img/toy/circuit.jpg",
+        imgTechUrl: "../../assets/img/tech/circuit-tech.png",
+        picked: false
+    },
+    {
+        name: "Poupée",
+        imgToyUrl: "../../assets/img/toy/doll.jpg",
+        imgTechUrl: "../../assets/img/tech/doll-tech.png",
+        picked: false
+    },
+    {
+        name: "IronMan",
+        imgToyUrl: "../../assets/img/toy/ironman.jpg",
+        imgTechUrl: "../../assets/img/tech/ironman-tech.png",
+        picked: false
+    },
+    {
+        name: "Cuisine",
+        imgToyUrl: "../../assets/img/toy/kitchen.jpg",
+        imgTechUrl: "../../assets/img/tech/kitchen-tech.png",
+        picked: false
+    },
+    {
+        name: "Lego",
+        imgToyUrl: "../../assets/img/toy/lego.png",
+        imgTechUrl: "../../assets/img/tech/lego-tech.png",
+        picked: false
+    },
+    {
+        name: "Mickey",
+        imgToyUrl: "../../assets/img/toy/mickey.jpg",
+        imgTechUrl: "../../assets/img/tech/mickey-tech.png",
+        picked: false
+    },
+    {
+        name: "Mr Patate",
+        imgToyUrl: "../../assets/img/toy/MrPatate.png",
+        imgTechUrl: "../../assets/img/tech/MrPatate-tech.png",
+        picked: false
+    },
+    {
+        name: "Ours",
+        imgToyUrl: "../../assets/img/toy/ours.jpg",
+        imgTechUrl: "../../assets/img/tech/ours-tech.png",
+        picked: false
+    },
+    {
+        name: "Plane",
+        imgToyUrl: "../../assets/img/toy/plane.jpg",
+        imgTechUrl: "../../assets/img/tech/plane-tech.png",
+        picked: false
+    },
+    {
+        name: "Playmobil",
+        imgToyUrl: "../../assets/img/toy/playmobil.png",
+        imgTechUrl: "../../assets/img/tech/playmobil-tech.png",
+        picked: false
+    },
+    {
+        name: "Patin à roulettes",
+        imgToyUrl: "../../assets/img/toy/roller.jpg",
+        imgTechUrl: "../../assets/img/tech/roller-tech.png",
+        picked: false
+    },
+    {
+        name: "Skate board",
+        imgToyUrl: "../../assets/img/toy/skate.jpg",
+        imgTechUrl: "../../assets/img/tech/skate-tech.png",
+        picked: false
+    },
+    {
+        name: "Star Wars",
+        imgToyUrl: "../../assets/img/toy/starWar.jpg",
+        imgTechUrl: "../../assets/img/tech/starWar-tech.png",
+        picked: false
+    },
+    {
+        name: "Transformers",
+        imgToyUrl: "../../assets/img/toy/transformer.jpg",
+        imgTechUrl: "../../assets/img/tech/transformer-tech.png",
+        picked: false
+    },
+    {
+        name: "Voiture",
+        imgToyUrl: "../../assets/img/toy/voiture.jpg",
+        imgTechUrl: "../../assets/img/tech/voiture-tech.png",
+        picked: false
+    },
 
 ]
 
