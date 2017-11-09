@@ -2,12 +2,15 @@ export const KIDS: any[] = [
     {
         firstName: "Paul",
         lastName: "Cailly",
-        photoUrl: "./assets/img/pp/paul.jpg"
+        photoUrl: "./assets/img/pp/paul.jpg",
+        sage : 8,
+        customMsg : "Tu as bien travaillé cette année, mon petit Paul. Mais vas-y mollo sur le RedBull quand même !"
     },  // 0
     {
         firstName: "Jeremy",
         lastName: "Perrin",
-        photoUrl: "./assets/img/pp/jeremy.jpg"
+        photoUrl: "./assets/img/pp/jeremy.jpg",
+        
     }, //1
     {
         firstName: "Alexandra",
