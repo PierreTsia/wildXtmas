@@ -1,4 +1,11 @@
 <p>
   scan works!
 </p>
-<input type="text">
+<input *ngIf = "this.scanned != true"autofocus (keyup)="onKey($event)" type="text" name ="code">
+
+<button *ngIf = "this.scanned != true"(click)="onScan()"class="btn btn-success">Scan</button>
+<p *ngIf = "values != '' && this.scanned == true">{{kids[values].firstName}}<img class="kids-pic" src="{{kids[values].photoUrl}}" alt="" ></p>
+
+
+
+
