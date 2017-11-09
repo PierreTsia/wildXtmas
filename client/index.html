@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Wild Xmas</title>
@@ -8,29 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
+
 <body>
   <app-root>Loading...</app-root>
   <script src="https://desandro.github.io/3dtransforms/js/utils.js"></script>
   <script>
-    let init = ()=> {
-      let carousel = document.getElementById('carousel'),
-          navButtons = document.querySelectorAll('button'),
-          panelCount = 20,
-          transformProp = Modernizr.prefixed('transform'),
-          theta = 0,
-
-          onNavButtonClick = ( event )=> {
-            let increment = parseInt( event.target.getAttribute('data-increment') );
-            theta += ( 360 / panelCount ) * increment * -1;
-            carousel.style[ transformProp ] = 'translateZ( -323px ) rotateY(' + theta + 'deg)';
-          };
-
-      for (var i=0; i < 2; i++) {
-        navButtons[i].addEventListener( 'click', onNavButtonClick, false);
-      }
-    };
-
-    window.addEventListener( 'DOMContentLoaded', init, false);
   </script>
 </body>
+
 </html>
