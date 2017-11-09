@@ -3,7 +3,7 @@ import { TOYS } from '../models/toymodels';
 import { Toy } from '../models/toy';
 import { ToylistComponent } from '../toylist/toylist.component';
 import { ToyService } from '../services/toy.service';
-
+declare var Modernizr: any;
 @Component({
   selector: 'app-toyselect',
   templateUrl: './toyselect.component.html',
@@ -12,10 +12,20 @@ import { ToyService } from '../services/toy.service';
 export class ToyselectComponent implements OnInit {
   toys = TOYS;
   selectedToy: Toy;
-  constructor(private toyservice: ToyService)  { }
+  theta=0;
+  constructor(private toyservice: ToyService) { }
 
   ngOnInit() {
-    this.toyservice.selectedList=[];
+    this.toyservice.selectedList = [];
+  }
+  carouselControl(increment) {
+    let carousel = document.getElementById('carousel');
+    let navButtons = document.querySelectorAll('.totocarousel button');
+    let panelCount = 20;
+    let transformProp = Modernizr.prefixed('transform');
+
+    this.theta += (360 / panelCount) * increment * -1;
+    carousel.style[transformProp] = 'translateZ( -663px ) rotateY(' + this.theta + 'deg)';
   }
   onSelect(toy: Toy) {
     this.toyservice.getNgClass(toy);
@@ -23,5 +33,5 @@ export class ToyselectComponent implements OnInit {
     console.log(this.toyservice.selectedList);
   }
 
-  
+
 }
