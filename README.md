@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Angular Full Stack [![Dependencies](https://david-dm.org/DavideViolante/Angular-Full-Stack.svg)](https://david-dm.org/DavideViolante/Angular2-Full-Stack) [![Donate](https://img.shields.io/badge/paypal-donate-179BD7.svg)](https://www.paypal.me/dviolante) [![MIT license](http://img.shields.io/badge/license-MIT-lightgrey.svg)](http://opensource.org/licenses/MIT)
 
 
@@ -80,3 +81,6 @@ To get more help on the `angular-cli` use `ng --help` or go check out the [Angul
 
 ### Author
 * [Davide Violante](https://github.com/DavideViolante)
+=======
+# wildXtmas
+>>>>>>> f7905f0f2083e14b702a67b99021b1923c9fdbdc
