@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { KIDS } from '../models/kidmodels'
+import { KIDS } from '../models/kidmodels';
+import { KidService } from '../services/kid.service';
 
 @Component({
   selector: 'app-scan',
@@ -8,25 +9,23 @@ import { KIDS } from '../models/kidmodels'
 })
 export class ScanComponent implements OnInit {
 
-  scanned = false;
+  //scanned = false;
   kids = KIDS;
-
   values = '';
-  
 
 
-  onKey(event: any) { 
+
+  onKey(event: any) {
     this.values = event.target.value;
     console.log(this.values)
   }
-  onScan(){
-    this.scanned = true;
-
+  onScan() {
+    this.kidService.scanMethod();
   }
-  constructor() { }
+  constructor(private kidService:KidService) { }
 
   ngOnInit() {
-    
+
   }
 
 }

@@ -3,6 +3,9 @@ import { TOYS } from '../models/toymodels';
 import { Toy } from '../models/toy';
 import { ToylistComponent } from '../toylist/toylist.component';
 import { ToyService } from '../services/toy.service';
+
+
+
 declare var Modernizr: any;
 @Component({
   selector: 'app-toyselect',
@@ -10,6 +13,7 @@ declare var Modernizr: any;
   styleUrls: ['./toyselect.component.scss']
 })
 export class ToyselectComponent implements OnInit {
+
   toys = TOYS;
   selectedToy: Toy;
   theta=0;

@@ -23,6 +23,7 @@ import { ScanComponent } from './scan/scan.component';
 import { ToyselectComponent } from './toyselect/toyselect.component';
 import { ToylistComponent } from './toylist/toylist.component';
 import { ToyService } from './services/toy.service';
+import { KidService } from './services/kid.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { ToyService } from './services/toy.service';
     CatService,
     UserService,
     ToyService,
-    ToylistComponent
+    ToylistComponent,
+    KidService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
