@@ -18,7 +18,7 @@ export class ToyselectComponent implements OnInit {
     this.toyservice.selectedList=[];
   }
   onSelect(toy: Toy) {
-   
+    this.toyservice.getNgClass(toy);
     this.toyservice.addToy(toy);
     console.log(this.toyservice.selectedList);
   }

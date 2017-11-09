@@ -9,6 +9,17 @@ export class ToyService {
   
   constructor(private toylist: ToylistComponent) { }
 
+
+
+    getNgClass(toy) {
+    
+      
+      return   {
+        'picked': toy.picked == true,
+        'unpicked': toy.picked == false,
+      };
+  }
+
   addToy(toy) {
     if (toy.picked == false){
       this.selectedList.push(toy);
@@ -17,6 +28,7 @@ export class ToyService {
     } else {
       console.log("already picked")
     }
+    this.getNgClass(toy);
 
   }
 }
