@@ -24,6 +24,7 @@ import { ToyselectComponent } from './toyselect/toyselect.component';
 import { ToylistComponent } from './toylist/toylist.component';
 import { ToyService } from './services/toy.service';
 import { KidService } from './services/kid.service';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,10 @@ import { KidService } from './services/kid.service';
   ],
   imports: [
     RoutingModule,
-    SharedModule
+    SharedModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDvWuLRUl6vv_rZzfi7rRDUVKpmry0DV1o'
+    })
   ],
   providers: [
     AuthService,
