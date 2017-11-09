@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { ToyService } from '../services/toy.service';
 
 @Component({
   selector: 'app-toylist',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToylistComponent implements OnInit {
 
+  //selectedList:any[];
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

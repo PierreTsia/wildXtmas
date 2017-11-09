@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TOYS } from '../models/toymodels';
+import { Toy } from '../models/toy';
+import { ToylistComponent } from '../toylist/toylist.component';
+import { ToyService } from '../services/toy.service';
 
 @Component({
   selector: 'app-toyselect',
@@ -8,9 +11,17 @@ import { TOYS } from '../models/toymodels';
 })
 export class ToyselectComponent implements OnInit {
   toys = TOYS;
-  constructor() { }
+  selectedToy: Toy;
+  constructor(private toyservice: ToyService)  { }
 
   ngOnInit() {
+    this.toyservice.selectedList=[];
+  }
+  onSelect(toy: Toy) {
+   
+    this.toyservice.addToy(toy);
+    console.log(this.toyservice.selectedList);
   }
 
+  
 }

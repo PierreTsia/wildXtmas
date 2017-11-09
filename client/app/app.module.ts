@@ -52,7 +52,8 @@ import { ToyService } from './services/toy.service';
     AuthGuardAdmin,
     CatService,
     UserService,
-    ToyService
+    ToyService,
+    ToylistComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
