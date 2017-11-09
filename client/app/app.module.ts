@@ -16,6 +16,13 @@ import { LogoutComponent } from './logout/logout.component';
 import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { KidComponent } from './kid/kid.component';
+import { ElfeComponent } from './elfe/elfe.component';
+import { SantaComponent } from './santa/santa.component';
+import { ScanComponent } from './scan/scan.component';
+import { ToyselectComponent } from './toyselect/toyselect.component';
+import { ToylistComponent } from './toylist/toylist.component';
+import { ToyService } from './services/toy.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +34,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
     LogoutComponent,
     AccountComponent,
     AdminComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    KidComponent,
+    ElfeComponent,
+    SantaComponent,
+    ScanComponent,
+    ToyselectComponent,
+    ToylistComponent
   ],
   imports: [
     RoutingModule,
@@ -38,7 +51,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AuthGuardLogin,
     AuthGuardAdmin,
     CatService,
-    UserService
+    UserService,
+    ToyService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
