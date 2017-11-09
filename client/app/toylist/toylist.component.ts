@@ -13,8 +13,6 @@ export class ToylistComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
 }
