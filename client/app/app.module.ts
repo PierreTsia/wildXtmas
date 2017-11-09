@@ -23,6 +23,7 @@ import { ScanComponent } from './scan/scan.component';
 import { ToyselectComponent } from './toyselect/toyselect.component';
 import { ToylistComponent } from './toylist/toylist.component';
 import { ToyService } from './services/toy.service';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,10 @@ import { ToyService } from './services/toy.service';
   ],
   imports: [
     RoutingModule,
-    SharedModule
+    SharedModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDvWuLRUl6vv_rZzfi7rRDUVKpmry0DV1o'
+    })
   ],
   providers: [
     AuthService,
