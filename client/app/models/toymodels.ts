@@ -91,7 +91,7 @@ export const TOYS = [
         picked: false
     },
     {
-        name: "Patin à roulettes",
+        name: "Roller",
         imgToyUrl: "../../assets/img/toy/roller.jpg",
         imgTechUrl: "../../assets/img/tech/roller-tech.png",
         picked: false
