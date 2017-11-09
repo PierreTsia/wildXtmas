@@ -9,11 +9,8 @@ export class ToyService {
   
   constructor(private toylist: ToylistComponent) { }
 
-
-
     getNgClass(toy) {
     
-      
       return   {
         'picked': toy.picked == true,
         'unpicked': toy.picked == false,

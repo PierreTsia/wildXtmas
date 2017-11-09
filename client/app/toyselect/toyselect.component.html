@@ -3,7 +3,7 @@
   
   <section class="container">
     <div id="carousel" class="panels-backface-invisible">
-      <figure *ngFor="let toy of toys" (click)="onSelect(toy)">
+      <figure *ngFor="let toy of toys" (click)="onSelect(toy)" [ngClass]="toyservice.getNgClass(toy)" >
         <img src="{{toy.imgToyUrl}}"><a>{{toy.name}}</a>
       </figure>
     </div>
