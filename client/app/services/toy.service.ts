@@ -4,35 +4,49 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class ToyService {
 
-  selectedList:any[];
-  letter:any[];
-  
+  selectedList: any[];
+  letterData: any;
+  toto:string;
+  public listComplete: Boolean = false;
+
+
   constructor() { }
 
-    getNgClass(toy) {
-    
-      return   {
-        'picked': toy.picked == true,
-        'unpicked': toy.picked == false,
-      };
-  }
+
 
   addToy(toy) {
-    if (toy.picked == false){
+    if (toy.picked == false) {
       this.selectedList.push(toy);
       toy.picked = true;
       console.log(toy.picked)
     } else {
       console.log("already picked")
     }
+    if (this.selectedList.length == 5){
+      alert("Attention, tu ne peux choisir que 5 jouets");
+      this.listComplete = true;
+    }
     this.getNgClass(toy);
 
   }
-  sendLetter(){
-    let data = {
-     toysList: this.selectedList,
-     kidInfo: "toto",
-    }
-    this.letter.push(data); 
+
+  getNgClass(toy) {
+    
+        return {
+          'picked': toy.picked == true || this.selectedList.length == 5,
+          'unpicked': toy.picked == false ,
+        };
+      }
+  sendLetter() {
+    this.selectedList.forEach((toyItem) =>{
+      this.letterData.push(toyItem);
+    });
+    
+    
   }
+
+  /*changeStatusToTrue(){
+    this.letterData[0].status = true;
+    console.log("ici "+this.letterData[0].status);
+  }*/
 }

@@ -20,7 +20,6 @@ export class SantaComponent implements OnInit {
   ngOnInit() {
   }
   public initMap() {
-    console.log('mes couilles');
     let directionsService = new google.maps.DirectionsService;
     let directionsDisplay = new google.maps.DirectionsRenderer;
     let map = new google.maps.Map(document.getElementById('map'), {
