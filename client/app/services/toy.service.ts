@@ -12,13 +12,7 @@ export class ToyService {
 
   constructor() { }
 
-  getNgClass(toy) {
 
-    return {
-      'picked': toy.picked == true,
-      'unpicked': toy.picked == false,
-    };
-  }
 
   addToy(toy) {
     if (toy.picked == false) {
@@ -36,6 +30,13 @@ export class ToyService {
 
   }
 
+  getNgClass(toy) {
+    
+        return {
+          'picked': toy.picked == true || this.selectedList.length == 5,
+          'unpicked': toy.picked == false ,
+        };
+      }
   sendLetter() {
     this.selectedList.forEach((toyItem) =>{
       this.letterData.push(toyItem);
