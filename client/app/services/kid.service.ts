@@ -5,6 +5,7 @@ export class KidService {
   scanned = false;
   
   values = '';
+  add=["Rouen", "Paris"]
   background = false
   constructor() { }
 

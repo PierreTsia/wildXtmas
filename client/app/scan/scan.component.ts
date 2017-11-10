@@ -16,13 +16,13 @@ export class ScanComponent implements OnInit {
 
   onKey(event: any) {
     this.kidService.values = event.target.value;
+    this.kidService.add.push(this.kids[this.kidService.values].address);
     console.log(this.kidService.values)
   }
   onScan() {
     this.kidService.scanMethod();
 
   }
-  
 
   ngOnInit() {
 
