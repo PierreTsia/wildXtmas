@@ -10,9 +10,7 @@ export class KidService {
   scanMethod(){
 
         this.scanned = true;
-        console.log(this.values)
-        
-        
+        console.log(this.values);        
     
   }
 

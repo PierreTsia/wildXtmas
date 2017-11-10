@@ -13,12 +13,26 @@ export class ElfeComponent implements OnInit {
 
   kids = KIDS;
   values = '';
-  
+  url = "";
   constructor(private toyService: ToyService) { }
 
 
   ngOnInit() {
   }
 
+  done(item){
+    //this.toyService.changeStatusToTrue();
+    console.log(item.status);
+    item.status = true;
+    console.log(item.status);
+  }
 
+  getTechImg(item){
+    
+    console.log(item.imgTechUrl);
+    this.url = item.imgTechUrl;
+    console.log("url :"+this.url)
+    return this.url;
+    
+  }
 }

@@ -1,6 +1,18 @@
 <ul>
-  <li *ngFor= "let item of toyService.letterData"><p>{{item.name}}</p></li>
+  <li *ngFor= "let item of toyService.letterData"  >
+    <p *ngIf="item.status == false">
+      {{item.name}}</p>
+      <button *ngIf="item.status == false" (click)="done(item)">Done</button>
+      <button *ngIf="item.status == false" (click)="getTechImg(item)">tech</button>
+     
+    </li>
 </ul>
+<ul>
+  <li *ngFor= "let item of toyService.letterData"><p *ngIf="item.status == true">{{item.name}}</p></li>
+</ul>
+<div class="container">
+  <img src="{{this.url}}" alt="">
+</div>
 <div class="contactList">
   <h2>{{kids[values].firstName}}{{kids[values].firstName}}</h2>
   <img src="{{kids[values].photoUrl}}">

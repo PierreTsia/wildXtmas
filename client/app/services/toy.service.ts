@@ -35,6 +35,11 @@ export class ToyService {
       this.letterData.push(toyItem);
     });
     
-    console.log(this.letterData);
+    
   }
+
+  /*changeStatusToTrue(){
+    this.letterData[0].status = true;
+    console.log("ici "+this.letterData[0].status);
+  }*/
 }
