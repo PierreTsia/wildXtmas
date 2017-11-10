@@ -1,12 +1,47 @@
 .navSelect{ 
-margin-top : 100px;
-}
+    position: absolute;
+    top: 600px;
+    left: 390px;}
 .center{
     text-align: center;
 }
-i img{
-    width: 80px;
-    height: 80px;
+.selection{
+    position: absolute;
+    top: 670px;
+    left: 100px;
+}
+#previous{
+    background-image: url("../../assets/img/btnLeft.png");
+    background-size: 100%;
+    width : 50px;
+    height : 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 0, 0, 0);
+}
+#next{
+    background-image: url("../../assets/img/btnRight.png");
+    background-size: 100%;
+    width : 50px;
+    height : 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 0, 0, 0);
+}
+#send{
+    position: absolute;
+    bottom: -1px;
+    right: -139px;
+    background-image: url("../../assets/img/enveloppe.png");
+    background-size: 100%;
+    width: 110px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    border: rgba(255, 0, 0, 0);
+}
+.totocarousel{
+    top: 150px;
+    left: 390px;
+    position: absolute;
 }
 .picked{
    opacity: 0.4;
@@ -41,8 +76,14 @@ i img{
 img {
     width: 180px;
     height: 180px;
+    border-radius: 10px;
+    
 }
-
+i img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
 li {
     list-style-type: none;
     cursor: pointer;

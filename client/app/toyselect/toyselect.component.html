@@ -13,14 +13,16 @@
 </div>
 <div class="center">
   <div class="navSelect">
-    <button id="previous" (click)="carouselControl(-1)">Previous</button>
-    <button>select</button>
-    <button id="next" (click)="carouselControl(1)">Next</button>
+    <button id="previous" (click)="carouselControl(-1)"></button>
+    <span class="invisible">clic sur les jouets</span>
+    <button id="next" (click)="carouselControl(1)"></button>
   </div>
 </div>
+<div class="selection">
 <td>
   <i *ngFor="let item of toyservice.selectedList">
     <img src="{{item.imgToyUrl}}" alt="">
   </i>
+  <button id="send" (click)="submitList()"></button>    
 </td>
-<button id="send" (click)="submitList()">envoyer</button>
+</div>

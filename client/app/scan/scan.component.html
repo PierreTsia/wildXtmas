@@ -1,11 +1,7 @@
-<p>
-  scan works!
-</p>
-<input autofocus (keyup)="onKey($event)" type="text" name="code">
+<input class="inputScan" autofocus (keyup)="onKey($event)" type="text" name="code">
 
-<button (click)="onScan()" class="btn btn-success">Scan</button>
+<button (click)="onScan()" class="btn btnScan"></button>
 <p *ngIf="values != '' && kidService.scanned == true">
   <img class="kids-pic" src="{{kids[kidService.values].photoUrl}}" alt="">
-  <br>Bonjour {{kids[kidService.values].firstName}}
-  <br>{{kids[kidService.values].msg}} Ho! Ho! Ho!
+  <br><span class="text message">Bonjour {{kids[kidService.values].firstName}}</span>
 </p>

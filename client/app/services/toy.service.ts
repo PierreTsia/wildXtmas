@@ -7,16 +7,12 @@ export class ToyService {
   selectedList: any[];
   letterData: any;
   toto:string;
+  public listComplete: Boolean = false;
+
 
   constructor() { }
 
-  getNgClass(toy) {
 
-    return {
-      'picked': toy.picked == true,
-      'unpicked': toy.picked == false,
-    };
-  }
 
   addToy(toy) {
     if (toy.picked == false) {
@@ -26,15 +22,31 @@ export class ToyService {
     } else {
       console.log("already picked")
     }
+    if (this.selectedList.length == 5){
+      alert("Attention, tu ne peux choisir que 5 jouets");
+      this.listComplete = true;
+    }
     this.getNgClass(toy);
 
   }
 
+  getNgClass(toy) {
+    
+        return {
+          'picked': toy.picked == true || this.selectedList.length == 5,
+          'unpicked': toy.picked == false ,
+        };
+      }
   sendLetter() {
     this.selectedList.forEach((toyItem) =>{
       this.letterData.push(toyItem);
     });
     
-    console.log(this.letterData);
+    
   }
+
+  /*changeStatusToTrue(){
+    this.letterData[0].status = true;
+    console.log("ici "+this.letterData[0].status);
+  }*/
 }

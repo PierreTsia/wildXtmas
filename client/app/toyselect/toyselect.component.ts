@@ -18,7 +18,7 @@ export class ToyselectComponent implements OnInit {
   toys = TOYS;
   selectedToy: Toy;
   theta=0;
-  constructor(private toyservice: ToyService) { }
+  constructor(public toyservice: ToyService) { }
 
   ngOnInit() {
     this.toyservice.selectedList = [];
@@ -34,11 +34,16 @@ export class ToyselectComponent implements OnInit {
     carousel.style[transformProp] = 'translateZ( -663px ) rotateY(' + this.theta + 'deg)';
   }
   onSelect(toy: Toy) {
+    if(this.toyservice.listComplete == false){
     this.toyservice.getNgClass(toy);
     this.toyservice.addToy(toy);
+    
+    }
   }
   submitList(){
     this.toyservice.sendLetter();
   }
+
+  i
 
 }

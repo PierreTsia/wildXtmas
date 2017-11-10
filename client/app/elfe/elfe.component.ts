@@ -15,10 +15,26 @@ export class ElfeComponent implements OnInit {
   values = '';
   
   constructor(private toyService: ToyService, private kidService: KidService) { }
+  url = "";
+
 
 
   ngOnInit() {
   }
 
+  done(item){
+    //this.toyService.changeStatusToTrue();
+    console.log(item.status);
+    item.status = true;
+    console.log(item.status);
+  }
 
+  getTechImg(item){
+    
+    console.log(item.imgTechUrl);
+    this.url = item.imgTechUrl;
+    console.log("url :"+this.url)
+    return this.url;
+    
+  }
 }

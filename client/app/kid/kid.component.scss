@@ -1,0 +1,86 @@
+.xmasBackgroundB{
+    background-image: url("../../assets/img/xmasBackgroundB.png");
+    background-size: 100%;
+    height: 100vh;    
+    background-repeat: no-repeat;
+    };
+.xmasBackgroundA{
+    background-image: url("../../assets/img/xmasBackgroundA.png");
+    background-size: 100%;
+    height: 100vh;    
+    background-repeat: no-repeat;
+    };
+.xmasBanner{
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left:0px;
+    background-image: url("../../assets/img/xmasBanner.png");
+    width: 100vw;
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    };
+.scan{
+    position: absolute;
+}
+.ruban{
+    position: absolute;
+    width: 620px;
+    z-index: 0;
+    top: 0px;
+    left:-40px;
+}
+.nez{
+    position: absolute;
+    z-index: 0;
+    top: 770px;
+    left: 720px;
+    font-family: 'Manus', Fallback, sans-serif;
+    color: black;
+    font-size: 40px;
+    }
+    .nez2{
+        position: absolute;
+        z-index: 0;
+        top: 760px;
+        left: 320px;
+        font-family: 'Manus', Fallback, sans-serif;
+        color: black;
+        font-size: 40px;
+        }
+        .nez3{
+            position: absolute;
+            z-index: 0;
+            top: 800px;
+            left: 320px;
+            font-family: 'Manus', Fallback, sans-serif;
+            color: black;
+            font-size: 40px;
+            } 
+
+.hello{
+   
+    font-family: 'Manus', Fallback, sans-serif;
+    color : white;
+    font-size: 70px;
+    }
+    .hello2{
+        
+         font-family: 'Manus', Fallback, sans-serif;
+         color : black;
+         font-size: 40px;
+         }
+         .hello3{
+            
+             font-family: 'Manus', Fallback, sans-serif;
+             color : rgb(255, 255, 255);
+             font-size: 40px;
+             }
+.texthello{
+    position: absolute;
+    text-align: center;
+    z-index: 0;
+    top: 90px;
+    left: 117px;
+}

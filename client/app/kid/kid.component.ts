@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { KidService} from '../services/kid.service';
+import { KidService } from '../services/kid.service';
+import { ToyService } from '../services/toy.service';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { KidService} from '../services/kid.service';
 })
 export class KidComponent implements OnInit {
 
-  constructor(public kidService: KidService) { }
+  constructor(public kidService: KidService, public toyService: ToyService) { }
 
   ngOnInit() {
   }

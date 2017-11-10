@@ -3,4 +3,5 @@ export class Toy {
     imgToyUrl: string;
     imgTechUrl: string;
     price: number;
+    status?: boolean;
 }

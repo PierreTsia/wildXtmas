@@ -1,3 +1,27 @@
-<app-scan></app-scan>
-<app-toyselect *ngIf="kidService.scanned == true"></app-toyselect>
-<!--<app-toylist></app-toylist>-->
+<app-scan class="scan"></app-scan>
+<div *ngIf="kidService.background == false" class=" container-fluid xmasBackgroundA">
+    <img class="ruban" src="../../assets/img/rubanRouge.svg" alt="">
+    <div class="texthello">
+        <p class="hello">COUCOU !!</p>
+        <br>
+        <br>
+        <p class="hello2">Je m'appelle Snow</p>
+        <br>
+        <p class="hello2">et je vais t'aider</p>
+        <p class="hello2">pour faire ta lettre</p>
+        <p class="hello2">pour papa NOEL</p>
+
+    </div>
+    <p class="nez">mets-toi devant moi et clique sur mon nez</p>
+    
+
+</div>
+
+<div *ngIf="kidService.background == true" class=" container-fluid xmasBackgroundB">
+    <app-toyselect *ngIf="kidService.scanned == true"></app-toyselect>
+    <p class="nez2">appuie sur les fleches et clique sur un jouet pour le choisir</p>
+    <br>
+    <p class="nez3">quand tu as fini, appuie sur l'enveloppe pour envoyer ta lettre</p>
+    
+    
+</div>
