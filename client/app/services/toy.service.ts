@@ -4,21 +4,22 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class ToyService {
 
-  selectedList:any[];
-  letter:any[];
-  
+  selectedList: any[];
+  letterData: any;
+  toto:string;
+
   constructor() { }
 
-    getNgClass(toy) {
-    
-      return   {
-        'picked': toy.picked == true,
-        'unpicked': toy.picked == false,
-      };
+  getNgClass(toy) {
+
+    return {
+      'picked': toy.picked == true,
+      'unpicked': toy.picked == false,
+    };
   }
 
   addToy(toy) {
-    if (toy.picked == false){
+    if (toy.picked == false) {
       this.selectedList.push(toy);
       toy.picked = true;
       console.log(toy.picked)
@@ -28,11 +29,12 @@ export class ToyService {
     this.getNgClass(toy);
 
   }
-  sendLetter(){
-    let data = {
-     toysList: this.selectedList,
-     kidInfo: "toto",
-    }
-    this.letter.push(data); 
+
+  sendLetter() {
+    this.selectedList.forEach((toyItem) =>{
+      this.letterData.push(toyItem);
+    });
+    
+    console.log(this.letterData);
   }
 }
