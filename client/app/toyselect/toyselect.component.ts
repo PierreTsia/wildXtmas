@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TOYS } from '../models/toymodels';
 import { Toy } from '../models/toy';
+import { List } from '../models/list';
 import { ToylistComponent } from '../toylist/toylist.component';
 import { ToyService } from '../services/toy.service';
 
@@ -21,6 +22,7 @@ export class ToyselectComponent implements OnInit {
 
   ngOnInit() {
     this.toyservice.selectedList = [];
+    this.toyservice.letterData = [];
   }
   carouselControl(increment) {
     let carousel = document.getElementById('carousel');
@@ -34,7 +36,6 @@ export class ToyselectComponent implements OnInit {
   onSelect(toy: Toy) {
     this.toyservice.getNgClass(toy);
     this.toyservice.addToy(toy);
-    console.log(this.toyservice.selectedList);
   }
   submitList(){
     this.toyservice.sendLetter();
