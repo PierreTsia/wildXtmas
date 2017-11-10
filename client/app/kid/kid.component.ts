@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { KidService} from '../services/kid.service';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KidComponent implements OnInit {
 
-  constructor() { }
+  constructor(public kidService: KidService) { }
 
   ngOnInit() {
   }

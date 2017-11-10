@@ -1,68 +1,88 @@
 export const KIDS = {
-    p : {
+    'p': {
         firstName: "Paul",
         lastName: "Cailly",
         photoUrl: "./assets/img/pp/paul.jpg",
-        sage : 8,
-        customMsg : "Tu as bien travaillé cette année, mon petit Paul. Mais vas-y mollo sur le RedBull quand même !"
+        msg: "Tu as bien travaillé cette année. Mais vas-y mollo sur le saucisson quand même !",
+        address: "Fontaine-Simon"
     },  // 0
-    j: {
+    'j': {
         firstName: "Jeremy",
         lastName: "Perrin",
         photoUrl: "./assets/img/pp/jeremy.jpg",
-        
+        address: "St-Eliph"
     }, //1
-    a: {
+    'a': {
         firstName: "Alexandra",
         lastName: "Maquet",
-        photoUrl: "./assets/img/pp/alexandra.jpg"
+        photoUrl: "./assets/img/pp/alexandra.jpg",
+        msg: "Tu as bien travaillé cette année. Tu devrais te méfier de ce Robert, ce n'est pas un garçon pour toi.",
+        address: "Chartres"
     }, //2
     pp: {
         firstName: "Pierre",
         lastName: "Gorce",
-        photoUrl: "./assets/img/pp/pierreg.jpg"
+        photoUrl: "./assets/img/pp/pierreg.jpg",
+        msg: "Tu as bien travaillé cette année. Mais vas-y mollo sur le saucisson quand même !",
+        address: "Le Pas Saint l'Homer"
     },//3
     r: {
         firstName: "Robert",
         lastName: "Schmid",
-        photoUrl: "./assets/img/pp/robert.jpg"
+        photoUrl: "./assets/img/pp/robert.jpg",
+        msg: "Es-tu bien sûr d'avoir été sage cette année ? J'ai vu ton historique de navigation, c'est pas joli joli!",
+        address: "Bonneval"
     },//4
-    s: {
+    's': {
         firstName: "Sylvain",
         lastName: "Le Crom",
-        photoUrl: "./assets/img/pp/sylvain.jpg"
+        photoUrl: "./assets/img/pp/sylvain.jpg",
+        msg: "Tu as bien travaillé cette année. Mais vas-y mollo sur le saucisson quand même !",
+        address: "Rouen"
     },//5
     t: {
         firstName: "Thomas",
-        lastName: "Godinot",
-        photoUrl: "./assets/img/pp/unknown.jpg"
+        lastName: "Godinho",
+        photoUrl: "./assets/img/pp/thomas.jpg",
+        msg: "Hmmm... J'ai essayé de trouver un message personnalisé sur GitHub mais je n'ai pas trouvé.",
+        address: "Chartres"
     },//6
     v: {
 
         firstName: "Victor",
         lastName: "Leduc",
-        photoUrl: "./assets/img/pp/victor.jpg"
+        photoUrl: "./assets/img/pp/victor.jpg",
+        msg: "Mon petit Victor, il va falloir arrêter avec les videos de Nazi maintenant... Et non, je ne peux pas t'offrir une femme pour Noël, n'insiste pas! ",
+        address: "Remalard"
     },//7
     m: {
         firstName: "Maxime",
         lastName: "Cornuaud",
-        photoUrl: "./assets/img/pp/maxime.jpg"
+        photoUrl: "./assets/img/pp/maxime.jpg",
+        msg: "Tu as été sage cette année, malheureusement, je ne peux pas t'offrir l'intégral de 'Très Chasse' en DVD.",
+        address: "La Loupe"
     },//8 
-    ppp : {
+    ppp: {
         firstName: "Pierre",
         lastName: "Tsiakkaros",
-        photoUrl: "./assets/img/pp/pierret.jpg"
+        photoUrl: "./assets/img/pp/pierret.jpg",
+        msg: "Un certain Sylvain L. insiste pour que je t'offre un aspirateur.",
+        address: "Paris"
     },//9
-    aa : {
+    aa: {
         firstName: "Anna",
         lastName: "Stepanoff",
-        photoUrl: "./assets/img/pp/anna.jpeg"
+        photoUrl: "./assets/img/pp/anna.jpeg",
+        msg: "Tu as bien travaillé cette année. Et non, merci, je ne veux pas de Chataigne.",
+        address: "St Eliph"
     },//10
 
-   mm: {
+    mm: {
         firstName: "Matthieu",
         lastName: "Marais",
-        photoUrl: "./assets/img/pp/matthieu.jpg"
+        photoUrl: "./assets/img/pp/matthieu.jpg",
+        msg: "Tu as bien travaillé cette année. Mais je ne peux malheureusement rien faire pour ton niveau au Ping Pong !",
+        address: "Belhomert"
     }//11
 
 }

@@ -12,6 +12,16 @@ i img{
    opacity: 0.4;
 }
 
+#buttonsControl{
+    display: flex;
+    flex-direction: row;
+}
+
+.carouselButton{
+    height: 30px;
+    margin: 10px;
+   
+}
 
 .carousel-control {
     position: absolute;
@@ -70,7 +80,6 @@ a:visited {
     height: 140px;
     position: relative;
     margin: 200px auto 40px;
-    border: 1px solid #CCC;
     -webkit-perspective: 1100px;
     -moz-perspective: 1100px;
     -o-perspective: 1100px;
