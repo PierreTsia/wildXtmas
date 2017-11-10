@@ -7,6 +7,8 @@ export class ToyService {
   selectedList: any[];
   letterData: any;
   toto:string;
+  public listComplete: Boolean = false;
+
 
   constructor() { }
 
@@ -25,6 +27,10 @@ export class ToyService {
       console.log(toy.picked)
     } else {
       console.log("already picked")
+    }
+    if (this.selectedList.length == 5){
+      console.log("fini");
+      this.listComplete = true;
     }
     this.getNgClass(toy);
 
