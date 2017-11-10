@@ -12,7 +12,6 @@ export class KidService {
 
         this.scanned = true;
         console.log(this.values);        
-    
         this.background = true;        
   }
 
