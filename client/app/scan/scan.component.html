@@ -1,11 +1,11 @@
 <p>
   scan works!
 </p>
-<input autofocus (keyup)="onKey($event)" type="text" name ="code">
+<input autofocus (keyup)="onKey($event)" type="text" name="code">
 
-<button (click)="onScan()"class="btn btn-success">Scan</button>
-<p *ngIf = "values != '' && this.kidService.scanned == true"><img class="kids-pic" src="{{kids[values].photoUrl}}" alt="" > <br>Bonjour {{kids[values].firstName}} <br>{{kids[values].msg}} Ho! Ho! Ho!</p>
-
-
-
-
+<button (click)="onScan()" class="btn btn-success">Scan</button>
+<p *ngIf="values != '' && kidService.scanned == true">
+  <img class="kids-pic" src="{{kids[values].photoUrl}}" alt="">
+  <br>Bonjour {{kids[values].firstName}}
+  <br>{{kids[values].msg}} Ho! Ho! Ho!
+</p>

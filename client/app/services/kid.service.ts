@@ -6,7 +6,9 @@ export class KidService {
   constructor() { }
 
   scanMethod(){
-       return this.scanned = true;
+
+        this.scanned = true;
+        
     
   }
 

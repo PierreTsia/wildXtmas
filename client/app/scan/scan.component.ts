@@ -21,8 +21,9 @@ export class ScanComponent implements OnInit {
   }
   onScan() {
     this.kidService.scanMethod();
+    console.log(this.kids)
   }
-  constructor(private kidService:KidService) { }
+  constructor(public kidService:KidService) { }
 
   ngOnInit() {
 

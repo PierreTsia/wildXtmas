@@ -9,7 +9,7 @@ import { KidService} from '../services/kid.service';
 })
 export class KidComponent implements OnInit {
 
-  constructor(private kidService: KidService) { }
+  constructor(public kidService: KidService) { }
 
   ngOnInit() {
   }
