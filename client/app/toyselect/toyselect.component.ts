@@ -32,6 +32,8 @@ export class ToyselectComponent implements OnInit {
     this.toyservice.addToy(toy);
     console.log(this.toyservice.selectedList);
   }
-
+  submitList(){
+    this.toyservice.sendLetter();
+  }
 
 }

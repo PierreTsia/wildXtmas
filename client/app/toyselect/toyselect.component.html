@@ -1,17 +1,25 @@
 <router-outlet></router-outlet>
 <div class="totocarousel">
-  
+
   <section class="container">
     <div id="carousel" class="panels-backface-invisible">
-      <figure *ngFor="let toy of toys" (click)="onSelect(toy)" [ngClass]="toyservice.getNgClass(toy)" >
-        <img src="{{toy.imgToyUrl}}"><a>{{toy.name}}</a>
+      <figure *ngFor="let toy of toys" (click)="onSelect(toy)" [ngClass]="toyservice.getNgClass(toy)">
+        <img src="{{toy.imgToyUrl}}">
+        <a>{{toy.name}}</a>
       </figure>
     </div>
   </section>
-  <button id="previous" (click)="carouselControl(-1)">Previous</button>
-  <button>select</button>
-  <button id="next" (click)="carouselControl(1)">Next</button>
 </div>
-<ul>
-  <li *ngFor="let item of toyservice.selectedList"><img src="{{item.imgToyUrl}}" alt=""></li>
-</ul>
+<div class="center">
+  <div class="navSelect">
+    <button id="previous" (click)="carouselControl(-1)">Previous</button>
+    <button>select</button>
+    <button id="next" (click)="carouselControl(1)">Next</button>
+  </div>
+</div>
+<td>
+  <i *ngFor="let item of toyservice.selectedList">
+    <img src="{{item.imgToyUrl}}" alt="">
+  </i>
+</td>
+<button id="send" (click)="submitList()">envoyer</button>

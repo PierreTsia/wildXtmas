@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { ToylistComponent } from '../toylist/toylist.component';
 
 @Injectable()
 export class ToyService {
 
   selectedList:any[];
+  letter:any[];
   
-  constructor(private toylist: ToylistComponent) { }
+  constructor() { }
 
     getNgClass(toy) {
     
@@ -27,5 +27,13 @@ export class ToyService {
     }
     this.getNgClass(toy);
 
+  }
+  sendLetter(){
+    let data = {
+     toysList: this.selectedList,
+     kidInfo: 
+    }
+    this.letter.push(data);
+    
   }
 }
