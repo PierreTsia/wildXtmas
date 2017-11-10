@@ -14,7 +14,7 @@ export class ElfeComponent implements OnInit {
   kids = KIDS;
   values = '';
   
-  constructor(private toyService: ToyService) { }
+  constructor(private toyService: ToyService, private kidService: KidService) { }
 
 
   ngOnInit() {

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { KIDS } from '../models/kidmodels';
 import { Kid } from '../models/kid';
+import { KidService} from '../services/kid.service';
+import { ToyService} from '../services/toy.service';
 declare var google: any;
 
 @Component({
@@ -12,46 +14,27 @@ export class SantaComponent implements OnInit {
   public start: any;
   public end: any;
   kids = KIDS;
-  constructor() { }
+  constructor(private kidService: KidService, private toyService: ToyService) { }
 
-  title: string = 'My first AGM project';
-  lat: number = 51.678418;
-  lng: number = 7.809007;
   ngOnInit() {
   }
   public initMap() {
     let directionsService = new google.maps.DirectionsService;
     let directionsDisplay = new google.maps.DirectionsRenderer;
-    let map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 6,
-      center: { lat: 41.85, lng: -87.65 }
-    });
+    let map = new google.maps.Map(document.getElementById('map'));
     directionsDisplay.setMap(map);
     this.calculateAndDisplayRoute(directionsService, directionsDisplay);
   }
-  private getKid3(): Kid {
-    return KIDS['ppp'];
-  }
-  private getKid2(): Kid {
-    return KIDS['s'];
-  }
-  private getKid1(): Kid {
-    return KIDS['a'];
-  }
+
   private calculateAndDisplayRoute(directionsService, directionsDisplay) {
-    let add1=this.getKid1().address;
-    let add2=this.getKid2().address;
-    let add3=this.getKid3().address;
-    let waypts = [{location: add1, stopover: true},{location: add2, stopover: true},{location: add3, stopover: true}];
-   /* let checkboxArray: any = document.getElementById('waypoints');
-    for (var i = 0; i < checkboxArray.length; i++) {
-      if (checkboxArray.options[i].selected) {
-        waypts.push({
-          location: checkboxArray[i].value,
+    let waypts = [];
+
+    for (var i = 0; i < this.kidService.add.length; i++) {
+          waypts.push({
+          location: this.kidService.add[i],
           stopover: true
         });
-      }
-    }*/
+    }
 
     directionsService.route({
       origin: "La Loupe",
