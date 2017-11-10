@@ -37,6 +37,7 @@ export class ToyselectComponent implements OnInit {
     if(this.toyservice.listComplete == false){
     this.toyservice.getNgClass(toy);
     this.toyservice.addToy(toy);
+    
     }
   }
   submitList(){

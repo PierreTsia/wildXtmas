@@ -23,7 +23,7 @@ export class ToyService {
       console.log("already picked")
     }
     if (this.selectedList.length == 5){
-      console.log("fini");
+      alert("Attention, tu ne peux choisir que 5 jouets");
       this.listComplete = true;
     }
     this.getNgClass(toy);

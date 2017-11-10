@@ -1,3 +1,7 @@
+<div class="col-md-6">
+  <div class="col-md-12">
+    <p>En attente de production</p>
+  </div>
 <ul>
   <li *ngFor= "let item of toyService.letterData"  >
     <p *ngIf="item.status == false">
@@ -7,12 +11,19 @@
      
     </li>
 </ul>
+</div>
+<div class="col-md-6">
+    <div class="col-md-12">
+        <p>En attente d'expédition</p>
+      </div>
 <ul>
   <li *ngFor= "let item of toyService.letterData"><p *ngIf="item.status == true">{{item.name}}</p></li>
 </ul>
+</div>
 <div class="container">
   <img src="{{this.url}}" alt="">
 </div>
+
 <div class="contactList">
   <h2>{{kids[values].firstName}}{{kids[values].firstName}}</h2>
   <img src="{{kids[values].photoUrl}}">
