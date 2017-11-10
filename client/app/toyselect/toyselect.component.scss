@@ -5,6 +5,11 @@
 .center{
     text-align: center;
 }
+.selection{
+    position: absolute;
+    top: 670px;
+    left: 100px;
+}
 #previous{
     background-image: url("../../assets/img/btnLeft.png");
     background-size: 100%;
@@ -19,6 +24,18 @@
     width : 50px;
     height : 50px;
     background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 0, 0, 0);
+}
+#send{
+    position: absolute;
+    bottom: -1px;
+    right: -139px;
+    background-image: url("../../assets/img/enveloppe.png");
+    background-size: 100%;
+    width: 110px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
     border: rgba(255, 0, 0, 0);
 }
 .totocarousel{

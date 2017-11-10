@@ -9,10 +9,7 @@ export class KidService {
   scanMethod(){
 
         this.scanned = true;
-        this.background = true;
-        
-        
-    
+        this.background = true;        
   }
 
 }

@@ -1,10 +1,6 @@
+<app-scan class="scan"></app-scan>        
 <div *ngIf="kidService.background == false" class=" container-fluid xmasBackgroundA">
-    <app-scan></app-scan>
-    <app-toyselect *ngIf="kidService.scanned == true"></app-toyselect>
-    <!--<app-toylist></app-toylist>-->
 </div>
-<div *ngIf="kidService.background == true" class=" container-fluid xmasBackgroundB">
-    <app-scan></app-scan>
+<div *ngIf="kidService.background == true" class=" container-fluid xmasBackgroundB">        
     <app-toyselect *ngIf="kidService.scanned == true"></app-toyselect>
-    <!--<app-toylist></app-toylist>-->
 </div>

@@ -23,6 +23,6 @@
   <i *ngFor="let item of toyservice.selectedList">
     <img src="{{item.imgToyUrl}}" alt="">
   </i>
+  <button id="send" (click)="submitList()"></button>    
 </td>
-<button id="send" (click)="submitList()">envoyer</button>
 </div>
