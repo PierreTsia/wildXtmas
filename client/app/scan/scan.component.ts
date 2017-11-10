@@ -9,21 +9,20 @@ import { KidService } from '../services/kid.service';
 })
 export class ScanComponent implements OnInit {
 
-  //scanned = false;
   kids = KIDS;
-  values = '';
-
+  
+  constructor(public kidService: KidService) { }
 
 
   onKey(event: any) {
-    this.values = event.target.value;
-    console.log(this.values)
+    this.kidService.values = event.target.value;
+    console.log(this.kidService.values)
   }
   onScan() {
     this.kidService.scanMethod();
-    console.log(this.kids)
+
   }
-  constructor(public kidService:KidService) { }
+  
 
   ngOnInit() {
 
