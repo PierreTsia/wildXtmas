@@ -1,5 +1,32 @@
 .kids-pic{
+    position: absolute;
     height: 200px;
     width: 200px;
-    border-radius:50%;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: white;
+    top: 57px;
+    left: 695px;
+}
+.btnScan{
+    position: absolute;
+    top: 240px;
+    left: 530px;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    opacity: 0;
+}
+.inputScan{
+opacity: 0;    
+}
+.text{
+    font-family: 'Manus', Fallback, sans-serif;
+    color : white;
+    font-size: 50px;
+}
+.message{
+    position: absolute;
+    top: 57px;
+    left: 395px;
 }

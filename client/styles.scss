@@ -1,10 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-
-body {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.input-group {
-  margin-bottom: 15px;
-}
+@font-face {
+    font-family: 'Manus';
+    src: url('./assets/font/Manus_Smooth_TRIAL.otf') format('Manus_Smooth_TRIA'), /* IE6-IE8 */
+         url('./assets/font/Manus_Smooth_TRIAL.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
