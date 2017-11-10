@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToyService } from '../services/toy.service';
 
 @Component({
   selector: 'app-elfe',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ElfeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private toyService: ToyService) { }
 
   ngOnInit() {
   }

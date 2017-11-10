@@ -31,9 +31,8 @@ export class ToyService {
   sendLetter(){
     let data = {
      toysList: this.selectedList,
-     kidInfo: 
+     kidInfo: "toto",
     }
-    this.letter.push(data);
-    
+    this.letter.push(data); 
   }
 }
